@@ -6,7 +6,8 @@
 <h2>PCLform</h2>
 
 @using (Html.BeginForm())
-{<div class="form-group">
+{
+    <!--  <div class="editor-label">    -->
         @Html.LabelFor(model => model.PatientName, "Name: ")
 
         <div class="col-md-10">
@@ -15,11 +16,11 @@
 
             @Html.ValidationMessageFor(model => model.PatientName, "", new { @class = "text-danger" })
 
-        </div> <!--end of "col-md-10" div for Patient Name-->
+     </div> <!--end of "col-md-10" div for Patient Name-->
 
-    </div> <!--end of "form-group" div for Patient Name-->
+    <!--</div> <!--end of "form-group" div for Patient Name-->
 
-    <div class="form-group">
+    <!--><div class="editor-label">   -->
 
         @Html.LabelFor(model => model.DateToday, "Date: ")
 
@@ -30,7 +31,7 @@
         </div><!--end of "col-md-10" div for Today's Date-->
 
 
-    </div><!--end of "form-group" div for Today's Date-->
+    <!--></div><!--end of "form-group" div for Today's Date-->
 
     <br />
     <br />
@@ -43,7 +44,7 @@
     <br />
     <br />
 
-    <div class="form-group">
+    <div class="editor-label">
         @Html.LabelFor(model => model.Event, "Event: ")
 
         <div class="col-md-10">
@@ -56,7 +57,7 @@
 
     </div> <!--end of "form-group" div for Event-->
 
-    <div class="form-group">
+    <div class="editor-label">
 
         @Html.LabelFor(model => model.EventDate, "Date: ")
 
@@ -81,7 +82,7 @@
         </tr>
 
         <tr>
-            <td>Repeated disturbing memories, thoughts, or images of the stressful experience</td>
+            <td>1. Repeated disturbing memories, thoughts, or images of the stressful experience</td>
             <td>@Html.RadioButtonFor(Model => Model.Response1, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response1, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response1, "Moderately")</td>
@@ -91,7 +92,7 @@
         </tr><!--Block for Response1-->
 
         <tr>
-            <td>Repeated, distrubing dreams of the stressful experince?</td>
+            <td>2. Repeated, distrubing dreams of the stressful experince?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response2, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response2, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response2, "Moderately")</td>
@@ -101,7 +102,7 @@
         </tr><!--Block for Response2-->
 
         <tr>
-            <td>Suddenly acting or feeling as if the stressful experience were happening again (as if you were reliving it)?</td>
+            <td>3. Suddenly acting or feeling as if the stressful experience were happening again (as if you were reliving it)?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response3, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response3, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response3, "Moderately")</td>
@@ -111,7 +112,7 @@
         </tr><!--Block for Response3-->
 
         <tr>
-            <td>Feeling very upset when something reminded you of the stressful experience?</td>
+            <td>4. Feeling very upset when something reminded you of the stressful experience?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response4, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response4, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response4, "Moderately")</td>
@@ -121,7 +122,7 @@
         </tr><!--Block for Response4-->
 
         <tr>
-            <td>Having physical reactions (e.g. heart pounding, trouble breathing, or sweating) when something reminded you of the stressful experience?</td>
+            <td>5. Having physical reactions (e.g. heart pounding, trouble breathing, or sweating) when something reminded you of the stressful experience?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response5, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response5, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response5, "Moderately")</td>
@@ -131,7 +132,7 @@
         </tr><!--Block for Response5-->
 
         <tr>
-            <td>Avoiding thinking about or talking about the stressful experience or avoiding having feelings related to it?</td>
+            <td>6. Avoiding thinking about or talking about the stressful experience or avoiding having feelings related to it?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response6, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response6, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response6, "Moderately")</td>
@@ -141,7 +142,7 @@
         </tr><!--Block for Response6-->
 
         <tr>
-            <td>Aviding activities or situations because they remind you of the stressful experience?</td>
+            <td>7. Aviding activities or situations because they remind you of the stressful experience?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response7, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response7, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response7, "Moderately")</td>
@@ -151,7 +152,7 @@
         </tr><!--Block for Response7-->
 
         <tr>
-            <td>Repeated disturbing memories, thoughts, or images of the stressful experience</td>
+            <td>8. Trouble remebering important parts of the stressful experience?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response8, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response8, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response8, "Moderately")</td>
@@ -161,7 +162,7 @@
         </tr><!--Block for Response8-->
 
         <tr>
-            <td>Repeated disturbing memories, thoughts, or images of the stressful experience</td>
+            <td>9. Loss of interest in activities that you used to enjoy?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response9, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response9, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response9, "Moderately")</td>
@@ -171,7 +172,7 @@
         </tr><!--Block for Response9-->
 
         <tr>
-            <td>Repeated disturbing memories, thoughts, or images of the stressful experience</td>
+            <td>10. Feeling distant or cut off from other people?<td>
             <td>@Html.RadioButtonFor(Model => Model.Response10, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response10, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response10, "Moderately")</td>
@@ -181,7 +182,7 @@
         </tr><!--Block for Response10-->
 
         <tr>
-            <td>Repeated disturbing memories, thoughts, or images of the stressful experience</td>
+            <td>11. Feeling emotionally numb or being unable to have loving feelings for those close to you?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response11, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response11, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response11, "Moderately")</td>
@@ -191,7 +192,7 @@
         </tr><!--Block for Response11-->
 
         <tr>
-            <td>Repeated disturbing memories, thoughts, or images of the stressful experience</td>
+            <td>12. Feeling as if your future will somehow be cut short?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response12, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response12, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response12, "Moderately")</td>
@@ -201,7 +202,7 @@
         </tr><!--Block for Response12-->
 
         <tr>
-            <td>Repeated disturbing memories, thoughts, or images of the stressful experience</td>
+            <td>13. Trouble falling or staying asleep?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response13, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response13, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response13, "Moderately")</td>
@@ -211,7 +212,7 @@
         </tr><!--Block for Response13-->
 
         <tr>
-            <td>Repeated disturbing memories, thoughts, or images of the stressful experience</td>
+            <td>14. Feeling irritable or having angry outbursts?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response14, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response14, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response14, "Moderately")</td>
@@ -222,7 +223,7 @@
 
 
         <tr>
-            <td>Repeated disturbing memories, thoughts, or images of the stressful experience</td>
+            <td>15. Having difficulty concentrating?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response15, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response15, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response15, "Moderately")</td>
@@ -232,7 +233,7 @@
         </tr><!--Block for Response15-->
 
         <tr>
-            <td>Repeated disturbing memories, thoughts, or images of the stressful experience</td>
+            <td>16. Being "super alert" or watchful or on guard?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response16, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response16, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response16, "Moderately")</td>
@@ -243,7 +244,7 @@
 
 
         <tr>
-            <td>Repeated disturbing memories, thoughts, or images of the stressful experience</td>
+            <td>17. Feeling jumpy or easily startled?</td>
             <td>@Html.RadioButtonFor(Model => Model.Response17, "Not At All")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response17, "A Little Bit")</td>
             <td>@Html.RadioButtonFor(Model => Model.Response17, "Moderately")</td>
@@ -252,13 +253,12 @@
 
         </tr><!--Block for Response17-->
 
+    </table><!--end of table-->
 
+    <br/>
+    <br/>
 
-
-
-    </table>
-
-
+    <input type="submit" value="Submit Form" />
 
 
 }<!-- end of form-->
