@@ -1,0 +1,264 @@
+﻿@model HH_client_manager.Models.PCL
+@{
+    ViewData["Title"] = "View";
+}
+
+<h2>View</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="editor-label">
+        @Html.LabelFor(model => model.PatientName, "Name: ")
+    </div> <!--end of "form-group" div for Patient Name-->
+
+    <div class="col-md-10">
+
+        @Html.EditorFor(model => model.PatientName)
+
+        @Html.ValidationMessageFor(model => model.PatientName, "", new { @class = "text-danger" })
+
+    </div> <!--end of "col-md-10" div for Patient Name-->
+
+    <br />
+
+    <div class="editor-label">
+
+        @Html.LabelFor(model => model.DateToday, "Date: ")
+
+    </div><!--end of "form-group" div for Today's Date-->
+
+    <div class="col-md-10">
+
+        @Html.TextBoxFor(Model => Model.DateToday, new { type = "date" })
+
+    </div><!--end of "col-md-10" div for Today's Date-->
+
+
+    <br />
+    <br />
+
+    <p>
+        If an event listed on the Life Events Checklist <strong>happened to you </strong> or you <strong>witnessed it, </strong>
+        please complete the items below. If more than one event happened, please choose the one that is <strong>most troublesome to you now.</strong>
+    </p>
+
+    <br />
+    <br />
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Event, "Event: ")
+
+        <div class="col-md-10">
+
+            @Html.EditorFor(model => model.PatientName)
+
+            @Html.ValidationMessageFor(model => model.PatientName, "", new { @class = "text-danger" })
+
+        </div> <!--end of "col-md-10" div for Event-->
+
+    </div> <!--end of "form-group" div for Event-->
+
+    <div class="editor-label">
+
+        @Html.LabelFor(model => model.EventDate, "Date: ")
+
+        <div class="col-md-10">
+
+            @Html.TextBoxFor(Model => Model.EventDate, new { type = "date" })
+
+        </div><!--end of "col-md-10" div for Event Date-->
+
+
+    </div><!--end of "form-group" div for Event Date-->
+
+
+    <table>
+        <tr>
+            <th>Bothered By</th>
+            <th>Not At All</th>
+            <th>A Little Bit</th>
+            <th>Moderately</th>
+            <th>Quite A Bit</th>
+            <th>Extremely</th>
+        </tr>
+
+        <tr>
+            <td>1. Repeated disturbing memories, thoughts, or images of the stressful experience</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response1, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response1, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response1, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response1, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response1, "Extremely")</td>
+
+        </tr><!--Block for Response1-->
+
+        <tr>
+            <td>2. Repeated, distrubing dreams of the stressful experince?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response2, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response2, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response2, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response2, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response2, "Extremely")</td>
+
+        </tr><!--Block for Response2-->
+
+        <tr>
+            <td>3. Suddenly acting or feeling as if the stressful experience were happening again (as if you were reliving it)?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response3, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response3, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response3, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response3, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response3, "Extremely")</td>
+
+        </tr><!--Block for Response3-->
+
+        <tr>
+            <td>4. Feeling very upset when something reminded you of the stressful experience?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response4, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response4, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response4, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response4, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response4, "Extremely")</td>
+
+        </tr><!--Block for Response4-->
+
+        <tr>
+            <td>5. Having physical reactions (e.g. heart pounding, trouble breathing, or sweating) when something reminded you of the stressful experience?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response5, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response5, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response5, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response5, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response5, "Extremely")</td>
+
+        </tr><!--Block for Response5-->
+
+        <tr>
+            <td>6. Avoiding thinking about or talking about the stressful experience or avoiding having feelings related to it?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response6, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response6, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response6, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response6, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response6, "Extremely")</td>
+
+        </tr><!--Block for Response6-->
+
+        <tr>
+            <td>7. Aviding activities or situations because they remind you of the stressful experience?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response7, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response7, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response7, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response7, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response7, "Extremely")</td>
+
+        </tr><!--Block for Response7-->
+
+        <tr>
+            <td>8. Trouble remebering important parts of the stressful experience?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response8, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response8, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response8, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response8, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response8, "Extremely")</td>
+
+        </tr><!--Block for Response8-->
+
+        <tr>
+            <td>9. Loss of interest in activities that you used to enjoy?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response9, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response9, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response9, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response9, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response9, "Extremely")</td>
+
+        </tr><!--Block for Response9-->
+
+        <tr>
+            <td>10. Feeling distant or cut-off from other people?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response9, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response9, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response9, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response9, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response9, "Extremely")</td>
+        </tr>><!--Block for Response10-->
+
+        <tr>
+            <td>11. Feeling emotionally numb or being unable to have loving feelings for those close to you?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response11, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response11, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response11, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response11, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response11, "Extremely")</td>
+
+        </tr><!--Block for Response11-->
+
+        <tr>
+            <td>12. Feeling as if your future will somehow be cut short?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response12, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response12, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response12, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response12, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response12, "Extremely")</td>
+
+        </tr><!--Block for Response12-->
+
+        <tr>
+            <td>13. Trouble falling or staying asleep?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response13, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response13, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response13, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response13, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response13, "Extremely")</td>
+
+        </tr><!--Block for Response13-->
+
+        <tr>
+            <td>14. Feeling irritable or having angry outbursts?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response14, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response14, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response14, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response14, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response14, "Extremely")</td>
+
+        </tr><!--Block for Response14-->
+
+
+        <tr>
+            <td>15. Having difficulty concentrating?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response15, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response15, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response15, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response15, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response15, "Extremely")</td>
+
+        </tr><!--Block for Response15-->
+
+        <tr>
+            <td>16. Being "super alert" or watchful or on guard?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response16, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response16, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response16, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response16, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response16, "Extremely")</td>
+
+        </tr><!--Block for Response16-->
+
+
+        <tr>
+            <td>17. Feeling jumpy or easily startled?</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response17, "Not At All")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response17, "A Little Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response17, "Moderately")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response17, "Quite A Bit")</td>
+            <td>@Html.RadioButtonFor(Model => Model.Response17, "Extremely")</td>
+
+        </tr><!--Block for Response17-->
+
+    </table><!--end of table-->
+
+    <br />
+    <br />
+
+    <input type="submit" value="Submit Form" />
+
+
+}<!-- end of form-->

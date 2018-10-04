@@ -31,3 +31,4 @@ C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debu
 C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.pdb
 C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.csproj.CopyComplete
 C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\Home\PCLform.g.cshtml.cs
+C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\PCL\PCL.g.cshtml.cs
