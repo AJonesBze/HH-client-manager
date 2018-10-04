@@ -11,7 +11,7 @@ namespace HH-client-manager.Models
         public string PartnerGender { get; set; }
         public string RelationshipStatus { get; set; }
         public DateTime DateEnrolled { get; set; }
-	public string Counselor Name { get; set; }
+	public string CounselorName{ get; set; }
         public int GroupsAttended { get; set; }
         public int CouncelingSessionsAttended { get; set; }
         public int MeetingsWithAdvocates { get; set; }
