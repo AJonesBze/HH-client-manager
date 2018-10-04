@@ -16,7 +16,6 @@ namespace HH-client-manager.Models
         public int CouncelingSessionsAttended { get; set; }
         public int MeetingsWithAdvocates { get; set; }
         public DateTime ExitDate { get; set; }
-        public int GroupsAttended { get; set; }
         public int HasHarkAssessmentPRE { get; set; }
         public int HasHarkAssessmentPOST { get; set; }
         public int HasPCLAssessmentPRE { get; set; }
