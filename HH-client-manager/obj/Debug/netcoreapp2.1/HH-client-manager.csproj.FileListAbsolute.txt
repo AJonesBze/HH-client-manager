@@ -68,3 +68,9 @@ C:\Users\n00928574\Source\Repos\Git\HH-client-manager\HH-client-manager\obj\Debu
 C:\Users\n00928574\Source\Repos\Git\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Edit.g.cshtml.cs
 C:\Users\n00928574\Source\Repos\Git\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Index.g.cshtml.cs
 C:\Users\n00928574\Source\Repos\Git\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Index2.g.cshtml.cs
+C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Create.g.cshtml.cs
+C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Delete.g.cshtml.cs
+C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Details.g.cshtml.cs
+C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Edit.g.cshtml.cs
+C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Index.g.cshtml.cs
+C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Index2.g.cshtml.cs
