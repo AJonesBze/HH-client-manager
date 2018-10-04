@@ -1,6 +1,6 @@
 using System;
 
-namespace HH-client-manager.Models 
+namespace HH_client_manager.Models 
 {
     public class Client {
         public int ID { get; set; }
@@ -11,7 +11,7 @@ namespace HH-client-manager.Models
         public string PartnerGender { get; set; }
         public string RelationshipStatus { get; set; }
         public DateTime DateEnrolled { get; set; }
-	public string CounselorName{ get; set; }
+	    public string CounselorName{ get; set; }
         public int GroupsAttended { get; set; }
         public int CouncelingSessionsAttended { get; set; }
         public int MeetingsWithAdvocates { get; set; }

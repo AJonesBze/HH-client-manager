@@ -1,0 +1,137 @@
+﻿@model IEnumerable<HH_client_manager.Models.Client>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Race)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ethnicity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PartnerGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RelationshipStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateEnrolled)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CounselorName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GroupsAttended)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CouncelingSessionsAttended)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MeetingsWithAdvocates)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExitDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HasHarkAssessmentPRE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HasHarkAssessmentPOST)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HasPCLAssessmentPRE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HasPCLAssessmentPOST)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HasShelterAssessmentPRE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HasShelterAssessmentPOST)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Race)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ethnicity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PartnerGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RelationshipStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateEnrolled)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CounselorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GroupsAttended)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CouncelingSessionsAttended)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MeetingsWithAdvocates)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExitDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HasHarkAssessmentPRE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HasHarkAssessmentPOST)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HasPCLAssessmentPRE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HasPCLAssessmentPOST)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HasShelterAssessmentPRE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HasShelterAssessmentPOST)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

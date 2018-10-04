@@ -1,0 +1,129 @@
+﻿@model HH_client_manager.Models.Client
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Client</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Race)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Race)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ethnicity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ethnicity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PartnerGender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PartnerGender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RelationshipStatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RelationshipStatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateEnrolled)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateEnrolled)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CounselorName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CounselorName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GroupsAttended)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GroupsAttended)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CouncelingSessionsAttended)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CouncelingSessionsAttended)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetingsWithAdvocates)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MeetingsWithAdvocates)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ExitDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ExitDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HasHarkAssessmentPRE)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HasHarkAssessmentPRE)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HasHarkAssessmentPOST)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HasHarkAssessmentPOST)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HasPCLAssessmentPRE)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HasPCLAssessmentPRE)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HasPCLAssessmentPOST)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HasPCLAssessmentPOST)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HasShelterAssessmentPRE)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HasShelterAssessmentPRE)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HasShelterAssessmentPOST)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HasShelterAssessmentPOST)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

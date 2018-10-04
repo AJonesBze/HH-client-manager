@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using HH_client_manager.Models;
 
 namespace HH_client_manager
 {
@@ -33,6 +35,9 @@ namespace HH_client_manager
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<HH_client_managerContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("HH_client_managerContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
