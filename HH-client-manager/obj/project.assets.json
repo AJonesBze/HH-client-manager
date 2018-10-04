@@ -11500,23 +11500,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dowdiem\\.nuget\\packages\\": {},
+    "C:\\Users\\Arianne Jones\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dowdiem\\source\\repos\\HH-client-manager\\HH-client-manager\\HH-client-manager.csproj",
+      "projectUniqueName": "C:\\Users\\Arianne Jones\\Source\\Repos\\HH-client-manager\\HH-client-manager\\HH-client-manager.csproj",
       "projectName": "HH-client-manager",
-      "projectPath": "C:\\Users\\dowdiem\\source\\repos\\HH-client-manager\\HH-client-manager\\HH-client-manager.csproj",
-      "packagesPath": "C:\\Users\\dowdiem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dowdiem\\source\\repos\\HH-client-manager\\HH-client-manager\\obj\\",
+      "projectPath": "C:\\Users\\Arianne Jones\\Source\\Repos\\HH-client-manager\\HH-client-manager\\HH-client-manager.csproj",
+      "packagesPath": "C:\\Users\\Arianne Jones\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Arianne Jones\\Source\\Repos\\HH-client-manager\\HH-client-manager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dowdiem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Arianne Jones\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
