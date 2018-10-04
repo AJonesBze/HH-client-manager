@@ -24,19 +24,23 @@ namespace HH_client_manager.Controllers
         }
 
 
-        /*
+        
         [HttpPost]
-        public IActionResult SUBMIT(PCL model)
+        public IActionResult Submit(PCL model)
 
         {
             String confirmation = "";
 
             if (ModelState.IsValid)
             {
-
+                confirmation = "The form for " + model.PatientName + "was successfully submitted.";
             }
-            return;
+            else
+            {
+                confirmation = "Try again";
+            }
+            return Content(confirmation);
         }
-        */
+        
     }
 }
