@@ -4,10 +4,11 @@
     ViewData["Title"] = "ClientCompare";
 }
 
-<h2>ClientCompare</h2>
+<h2>PPSR Client Comparison</h2>
+<p>Comparing the PPSR Assessment of Client #@Model.ClientId to all Client's PPSR Results.</p>
+
 
 <div>
-    <h4>Ppsr</h4>
     <hr />
     <table class="table">
         <thead>
@@ -96,6 +97,5 @@
     </table>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.ClientId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a href="/Clients/Details/@Model.ClientId">Back to Client</a>
 </div>
