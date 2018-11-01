@@ -78,12 +78,21 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.ClientId">Edit</a> |
-    <a asp-action="Index">Back to List</a><br />
-    <a href="/Ppsrs/ClientInfo/@Model.ClientId"> PPSR Data </a> |
-    <a href="/Pcls/ClientInfo/@Model.ClientId"> PCL Data </a> |
-    <a href="/Cfars/ClientInfo/@Model.ClientId"> CFAR Data </a> <br />
-    <a href="/Ppsrs/ClientCompare/@Model.ClientId"> **Compare PPSR Data </a> |
-    <a href="/Pcls/ClientCompare/@Model.ClientId"> Compare PCL Data </a> |
-    <a href="/Cfars/ClientCompare/@Model.ClientId"> Compare CFAR Data </a>
+    <table cellspacing=5px>
+        <tr>
+            <td><a asp-action="Edit" asp-route-id="@Model.ClientId">Edit </a> </td>
+            <td><a href="/Ppsrs/ClientInfo/@Model.ClientId">| PPSR Data </a> </td>
+            <td><a href="/Ppsrs/ClientCompare/@Model.ClientId">| PPSR - Compare </a> </td>
+        </tr>
+        <tr>
+            <td><a asp-action="Index">Back to List      </a></td>
+            <td><a href="/Pcls/ClientInfo/@Model.ClientId">| PCL Data      </a> </td>
+            <td><a href="/Pcls/ClientCompare/@Model.ClientId">| PCL Compare </a> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><a href="/Cfars/ClientInfo/@Model.ClientId">| CFAR Data </a></td>
+            <td><a href="/Cfars/ClientCompare/@Model.ClientId">| CFAR Compare </a></td>
+        </tr>
+    </table>
 </div>

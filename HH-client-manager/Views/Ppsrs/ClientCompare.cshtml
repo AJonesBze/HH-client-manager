@@ -1,0 +1,101 @@
+﻿@model HHclientmanager.Models.Ppsr
+
+@{
+    ViewData["Title"] = "ClientCompare";
+}
+
+<h2>ClientCompare</h2>
+
+<div>
+    <h4>Ppsr</h4>
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Comparing
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.A)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.B)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.C)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.D)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.E)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.F)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.G)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Client # @Html.DisplayFor(model => model.ClientId)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.A)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.B)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.C)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.D)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.E)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.F)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.G)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Client Avg
+                </td>
+                <td>
+                    @ViewBag.A
+                </td>
+                <td>
+                    @ViewBag.B
+                </td>
+                <td>
+                    @ViewBag.C
+                </td>
+                <td>
+                    @ViewBag.D
+                </td>
+                <td>
+                    @ViewBag.E
+                </td>
+                <td>
+                    @ViewBag.F
+                </td>
+                <td>
+                    @ViewBag.G
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ClientId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

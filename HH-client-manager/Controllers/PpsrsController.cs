@@ -44,7 +44,72 @@ namespace HH_client_manager.Controllers
             return View(ppsr);
         }
 
-        // GET: Cfars
+        // GET: Ppsrs
+        public async Task<IActionResult> ClientCompare(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var Ppsr2 = from m in _context.Ppsr
+                        select m;
+
+            Ppsr2 = Ppsr2.Where(s => s.ClientId == Convert.ToInt32(id));
+
+            var max = 0;
+            foreach (var ass in Ppsr2)
+            {
+                if (ass.PpsrId > max)
+                {
+                    max = ass.PpsrId;
+                }
+            }
+            Ppsr Ppsr3 = await _context.Ppsr
+                .Include(c => c.Client)
+                .FirstOrDefaultAsync(m => m.PpsrId == max);
+
+            var Ppsr = _context.Ppsr.Include(c => c.Client);
+            
+            int aaa = 0;
+            int bbb = 0;
+            int ccc = 0;
+            int ddd = 0;
+            int eee = 0;
+            int fff = 0;
+            int ggg = 0;
+
+
+            foreach (var ass in Ppsr)
+            {
+                aaa += ass.A;
+                bbb += ass.B;
+                ccc += ass.C;
+                ddd += ass.D;
+                eee += ass.E;
+                fff += ass.F;
+                ggg += ass.G;
+            }
+            aaa = aaa / Ppsr.Count();
+            bbb = bbb / Ppsr.Count();
+            ccc = ccc / Ppsr.Count();
+            ddd = ddd / Ppsr.Count();
+            eee = eee / Ppsr.Count();
+            fff = fff / Ppsr.Count();
+            ggg = ggg / Ppsr.Count();
+
+            ViewBag.A = aaa;
+            ViewBag.B = bbb;
+            ViewBag.C = ccc;
+            ViewBag.D = ddd;
+            ViewBag.E = eee;
+            ViewBag.F = fff;
+            ViewBag.G = ggg;
+
+            return View(Ppsr3);
+        }
+
+        // GET: Ppsr
         public async Task<IActionResult> ClientInfo(int? id) {
             if (id == null) {
                 return NotFound();
