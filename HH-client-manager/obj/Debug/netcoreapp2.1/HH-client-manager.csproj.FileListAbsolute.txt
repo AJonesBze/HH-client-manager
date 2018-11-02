@@ -33,3 +33,11 @@ C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debu
 C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\Home\PCLform.g.cshtml.cs
 C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\PCL\PCL.g.cshtml.cs
 C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\PPSR\PPSR.g.cshtml.cs
+C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.csprojAssemblyReference.cache
+C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.csproj.CoreCompileInputs.cache
+C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.RazorAssemblyInfo.cache
+C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.RazorAssemblyInfo.cs
+C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.AssemblyInfoInputs.cache
+C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.AssemblyInfo.cs
+C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.dll
+C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.pdb
