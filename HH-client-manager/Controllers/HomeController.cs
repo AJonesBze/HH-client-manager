@@ -55,17 +55,18 @@ namespace HH_client_manager.Controllers
 
         // creates an Excel file, returning it to the user without changing the page
         // currently creates a predefined dummy file
-        public async Task<IActionResult> Export()
+        public async Task<IActionResult> Export(/*object[] input,*/ string sFileName = @"demo.xlsx")
         {
+            //// inputs
+            //string sFileName = @"demo.xlsx"; // ideal file name
+            TestingClass[] input = { new TestingClass("nameA", 42, "nameB"), new TestingClass("nameC", 24, "NameD") };
+            ////
+
+
             string sWebRootFolder = _hostingEnvironment.WebRootPath; // the "wwwroot" folder location on server
-            string sFileName = @"demo.xlsx"; // ideal file name
             FileInfo file = new FileInfo(Path.Combine(sWebRootFolder, sFileName)); // create Excel file, place in wwwroot folder
             var memory = new MemoryStream(); // necessary in order to be able to delete file before giving file to user
-
-
-            //dummy class for content
-
-            TestingClass[] dummyClasses = { new TestingClass("nameA", 42, "nameB"), new TestingClass("nameC",24,"NameD")};
+            
 
 
             using (var fs = new FileStream(Path.Combine(sWebRootFolder, sFileName), FileMode.Create, FileAccess.Write))
@@ -83,10 +84,13 @@ namespace HH_client_manager.Controllers
 
 
                     // table header values
-                    foreach (PropertyInfo property in dummyClasses[0].GetType().GetProperties())
+                    foreach (PropertyInfo property in input[0].GetType().GetProperties())
                     {
-                        ws.Cells[row, col].Value = GetDisplayName(dummyClasses[0].GetType(), property, true);
-                        col++;
+                        if (GetDisplayName(input[0].GetType(), property, true) != "")
+                        {
+                            ws.Cells[row, col].Value = GetDisplayName(input[0].GetType(), property, true);
+                            col++;
+                        }
                     }
 
 
@@ -98,12 +102,15 @@ namespace HH_client_manager.Controllers
 
 
                     // contents of each passed in instance
-                    foreach (var v in dummyClasses)
+                    foreach (var v in input)
                     {
-                        foreach (PropertyInfo property in dummyClasses[0].GetType().GetProperties())
+                        foreach (PropertyInfo property in input[0].GetType().GetProperties())
                         {
-                            ws.Cells[row, col].Value = property.GetValue(v);
-                            col++;
+                            if (GetDisplayName(input[0].GetType(), property, true) != "")
+                            {
+                                ws.Cells[row, col].Value = property.GetValue(v);
+                                col++;
+                            }
                         }
                         col = 1;
                         row++;
@@ -156,7 +163,7 @@ namespace HH_client_manager.Controllers
             PropertyDescriptor propDesc = TypeDescriptor.GetProperties(type).Find(info.Name, true);
             DisplayNameAttribute displayAttribute =
                 propDesc.Attributes.OfType<DisplayNameAttribute>().FirstOrDefault();
-            return displayAttribute != null ? displayAttribute.DisplayName : info.Name;
+            return displayAttribute != null ? displayAttribute.DisplayName : "";
         }
     }
 }
