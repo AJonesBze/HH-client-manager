@@ -2847,7 +2847,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "runtime.native.System.Data.SqlClient.sni/4.5.0": {
         "type": "package",
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -7588,14 +7588,15 @@
         "runtime.native.system.nuspec"
       ]
     },
-    "runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "A8v6PGmk+UGbfWo5Ixup0lPM4swuSwOiayJExZwKIOjTlFFQIsu3QnDXECosBEyrWSPryxBVrdqtJyhK3BaupQ==",
+    "runtime.native.System.Data.SqlClient.sni/4.5.0": {
+      "sha512": "X4hp5h5M2plTWZnUd79d0x4actSMj9L3Hv6e1Lu+oGi35XSaXg21ha4Rqmt2KrIesfUwMfpET8QhMkS1eiWqRQ==",
       "type": "package",
-      "path": "runtime.native.system.data.sqlclient.sni/4.4.0",
+      "path": "runtime.native.system.data.sqlclient.sni/4.5.0",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+        "runtime.native.system.data.sqlclient.sni.4.5.0.nupkg.sha512",
         "runtime.native.system.data.sqlclient.sni.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -12214,7 +12215,8 @@
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
+      "runtime.native.System.Data.SqlClient.sni >= 4.5.0"
     ]
   },
   "packageFolders": {
@@ -12224,11 +12226,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Arianne Jones\\Source\\Repos\\HH-client-manager\\HH-client-manager\\HH-client-manager.csproj",
+      "projectUniqueName": "C:\\Users\\Arianne Jones\\source\\repos\\HH-client-manager\\HH-client-manager\\HH-client-manager.csproj",
       "projectName": "HH-client-manager",
-      "projectPath": "C:\\Users\\Arianne Jones\\Source\\Repos\\HH-client-manager\\HH-client-manager\\HH-client-manager.csproj",
+      "projectPath": "C:\\Users\\Arianne Jones\\source\\repos\\HH-client-manager\\HH-client-manager\\HH-client-manager.csproj",
       "packagesPath": "C:\\Users\\Arianne Jones\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Arianne Jones\\Source\\Repos\\HH-client-manager\\HH-client-manager\\obj\\",
+      "outputPath": "C:\\Users\\Arianne Jones\\source\\repos\\HH-client-manager\\HH-client-manager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12272,6 +12274,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.1.1, )"
+          },
+          "runtime.native.System.Data.SqlClient.sni": {
+            "target": "Package",
+            "version": "[4.5.0, )"
           }
         },
         "imports": [
