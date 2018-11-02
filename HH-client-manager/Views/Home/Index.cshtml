@@ -2,15 +2,21 @@
     ViewData["Title"] = "Home Page";
 }
 
+<h2>Export File</h2>
+<p>Please choose the data set you would like to export.</p>
+
+<ul>
+    <li><a asp-action="Export">Export Generic Test</a></li>
+    <li><a asp-area="" asp-controller="Home" asp-action="ExportPerson">Export Person</a></li>
+    <li><a asp-area="" asp-controller="Home" asp-action="ExportGroup">Export Group</a></li>
+</ul>
+
+<h2>Import</h2>
+<p>Import new client data:</p>
 <form method="post" enctype="multipart/form-data">
     <div class="row">
         <div class="col-md-4">
             <input type="file" id="fileUpload" name="fileImport" class="form-control" />
         </div>
-        <div class="col-md=8">
-            <input type="button" id="fileUpload_button" value="Import File" />
-        </div>
     </div>
 </form>
-
-<a asp-action="Export">Export Excel File</a>

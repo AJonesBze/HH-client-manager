@@ -46,6 +46,15 @@ namespace HH_client_manager.Controllers
             return View();
         }
 
+        public IActionResult ExportGroup()
+        {
+            return View();
+        }
+        public IActionResult ExportPerson()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

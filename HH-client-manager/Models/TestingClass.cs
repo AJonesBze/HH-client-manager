@@ -11,7 +11,7 @@ namespace HH_client_manager.Models
         [DisplayName("Name")]
         public string name { get; set; }
         [DisplayName("Statistic")]
-        public int stat { get; set; }
+        private int stat { get; set; }
 
         public string altName { get; set; }
 
