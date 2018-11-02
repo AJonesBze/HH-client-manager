@@ -1,5 +1,5 @@
 /*
-Checklist for Export() to work:
+Checklist for Export() to work in a given Controller:
 O- _hostingEnvironment global(?) variable declared
 O- _hostingEnvironment here in HomeController()
 O- Task<IActionResult> Export() here

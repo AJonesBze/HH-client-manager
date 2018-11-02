@@ -6,7 +6,7 @@
 <p>Please choose the data set you would like to export.</p>
 
 <ul>
-    <li><a asp-action="Export">Export Generic Test</a></li>
+    <li><a asp-controller="Home" asp-action="Export">Export Generic Test</a></li>
     <li><a asp-area="" asp-controller="Home" asp-action="ExportPerson">Export Person</a></li>
     <li><a asp-area="" asp-controller="Home" asp-action="ExportGroup">Export Group</a></li>
 </ul>
@@ -20,3 +20,13 @@
         </div>
     </div>
 </form>
+
+
+<h2>Fuzzy Match Demo</h2>
+
+@{ 
+    string input = "fdsa";
+    string analogue = "asdf";
+    bool testOutput = FuzzyMatch.FuzzyMatchString(input, analogue);
+}
+<p>String match: @testOutput</p>
