@@ -1,0 +1,47 @@
+﻿@model HHclientmanager.Models.Cfar
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>CFAR @Html.DisplayFor(model => model.CfarId) Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Anxiety)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Anxiety)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TraumaticStress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TraumaticStress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Depression)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Depression)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmotionalityIndex)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmotionalityIndex)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Client)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Client.ClientId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CfarId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

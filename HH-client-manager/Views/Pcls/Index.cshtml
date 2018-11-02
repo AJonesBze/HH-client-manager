@@ -1,0 +1,47 @@
+﻿@model IEnumerable<HHclientmanager.Models.Pcl>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>PCL Assessments</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PclId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SeverityScore)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Client)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <th>
+                @Html.DisplayFor(modelItem => item.PclId)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.SeverityScore)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Client.ClientId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PclId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PclId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PclId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

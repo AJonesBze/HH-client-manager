@@ -1,0 +1,76 @@
+﻿@model HHclientmanager.Models.Cfar
+
+@{
+    ViewData["Title"] = "ClientCompare";
+}
+
+<h2>Client Comparison</h2>
+
+<div>
+    <h4>Cfar</h4>
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Comparing
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Anxiety)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TraumaticStress)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Depression)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EmotionalityIndex)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Client # @Html.DisplayFor(model => model.ClientId)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Anxiety)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.TraumaticStress)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Depression)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.EmotionalityIndex)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Client Avg 
+                </td>
+                <td>
+                    @ViewBag.Anxiety
+                </td>
+                <td>
+                    @ViewBag.Trauma
+                </td>
+                <td>
+                    @ViewBag.Depression
+                </td>
+                <td>
+                    @ViewBag.Emotional
+                </td>
+            </tr>
+        <td>
+        </td>
+        </tbody>
+    </table>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CfarId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

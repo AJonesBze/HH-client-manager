@@ -1,0 +1,65 @@
+﻿@model HHclientmanager.Models.Ppsr
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>PPSR @Html.DisplayFor(model => model.PpsrId)</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.A)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.A)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.B)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.B)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.C)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.C)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.D)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.D)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.E)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.E)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.F)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.F)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.G)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.G)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Client)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Client.ClientId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PpsrId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

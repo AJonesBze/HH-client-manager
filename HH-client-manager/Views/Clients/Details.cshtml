@@ -1,0 +1,90 @@
+﻿@model HHclientmanager.Models.Client
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Client Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClientId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClientId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dob)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dob)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ethnicity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ethnicity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Race)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Race)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PartnerGender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PartnerGender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RelationshipStatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RelationshipStatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AdvocateName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AdvocateName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateEnrolled)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateEnrolled)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ExitDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ExitDate)
+        </dd>
+    </dl>
+    
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ClientId">Edit</a> |
+    <a asp-action="Index">Back to List</a><br />
+    <a href="/Ppsrs/ClientInfo/@Model.ClientId"> PPSR Data </a> |
+    <a href="/Pcls/ClientInfo/@Model.ClientId"> PCL Data </a> |
+    <a href="/Cfars/ClientInfo/@Model.ClientId"> CFAR Data </a> <br />
+    <a href="/Ppsrs/ClientCompare/@Model.ClientId"> **Compare PPSR Data </a> |
+    <a href="/Pcls/ClientInfo/@Model.ClientId"> **Compare PCL Data </a> |
+    <a href="/Cfars/ClientCompare/@Model.ClientId"> Compare CFAR Data </a>
+</div>
