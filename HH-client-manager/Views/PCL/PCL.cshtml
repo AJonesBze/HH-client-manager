@@ -11,7 +11,7 @@
         @Html.LabelFor(model => model.PatientName, "Name: ")
     </div> <!--end of "form-group" div for Patient Name-->
 
-    <div class="col-md-10">
+    <div class="col-md-offset-0">
 
         @Html.EditorFor(model => model.PatientName)
 
@@ -27,7 +27,7 @@
 
     </div><!--end of "form-group" div for Today's Date-->
 
-    <div class="col-md-10">
+    <div class="col-md-offset-0">
 
         @Html.TextBoxFor(Model => Model.DateToday, new { type = "date" })
 
@@ -48,7 +48,7 @@
     <div class="editor-label">
         @Html.LabelFor(model => model.Event, "Event: ")
 
-        <div class="col-md-10">
+        <div class="col-md-offset-0">
 
             @Html.EditorFor(model => model.PatientName)
 
@@ -62,7 +62,7 @@
 
         @Html.LabelFor(model => model.EventDate, "Date: ")
 
-        <div class="col-md-10">
+        <div class="col-md-offset-0">
 
             @Html.TextBoxFor(Model => Model.EventDate, new { type = "date" })
 

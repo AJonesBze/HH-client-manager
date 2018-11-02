@@ -8,7 +8,7 @@
         @Html.LabelFor(model => model.ClientNumber, "Client: ")
     </div> <!--end of "form-group" div for Patient Name-->
 
-    <div class="col-md-10">
+    <div class="col-md-offset-0">
 
         @Html.EditorFor(model => model.ClientNumber)
 
@@ -22,7 +22,7 @@
         @Html.LabelFor(model => model.Age, "Age: ")
     </div> <!--end of "form-group" div for Patient Name-->
 
-    <div class="col-md-10">
+    <div class="col-md-offset-0">
 
         @Html.EditorFor(model => model.Age)
 
@@ -36,7 +36,7 @@
         @Html.LabelFor(model => model.Ethnicity, "Ethnicity: ")
     </div> <!--end of "form-group" div for Patient Name-->
 
-    <div class="col-md-10">
+    <div class="col-md-offset-0">
 
         @Html.EditorFor(model => model.Ethnicity)
 
@@ -89,128 +89,185 @@
         There are no right or wrong answers.
         <br />
 
-        Almost never&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sometimes true&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Almost always
+    <p>Almost never&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sometimes true&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Almost always</p>
         <br />
-        1----------------------2-------------------------3-----------------------4--------------------------5--------------------6-------------------7
+        <p> 1----------------------2-------------------------3-----------------------4--------------------------5--------------------6-------------------7</p>
         <br />
 
     </p>
 
-    <div class="responses">
-        @Html.LabelFor(model => model.Response1, "1. I have equal relationships with important others in my life.")
-        @Html.TextBoxFor(Model => Model.Response1, new { type = "int" })
-        <br />
+        <div class="responses">
+            @Html.LabelFor(model => model.Response1, "1. I have equal relationships with important others in my life.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response1, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response2, "2.. It is important to me to be financially independent.")
-        @Html.TextBoxFor(Model => Model.Response2, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response2, "2.. It is important to me to be financially independent.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response2, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response3, "3. It is difficult for me to be assertive with others when I need to be.")
-        @Html.TextBoxFor(Model => Model.Response3, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response3, "3. It is difficult for me to be assertive with others when I need to be.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response3, new { type = "int" })
+            </div>
+            <br />
 
 
-        @Html.LabelFor(model => model.Response4, "4. I can speak up for my needs instead of always takin care of other people’s needs.")
-        @Html.TextBoxFor(Model => Model.Response4, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response4, "4. I can speak up for my needs instead of always takin care of other people’s needs.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response4, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response5, "5. I feel prepared to deal with the discrimination I experience in today’s society.")
-        @Html.TextBoxFor(Model => Model.Response5, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response5, "5. I feel prepared to deal with the discrimination I experience in today’s society.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response5, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response6, "6. It is difficult for me to recognize when I am angry.")
-        @Html.TextBoxFor(Model => Model.Response6, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response6, "6. It is difficult for me to recognize when I am angry.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response6, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response7, "7. I feel comfortable in confronting my instructor/counselor/supervisor when we see things differently.")
-        @Html.TextBoxFor(Model => Model.Response7, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response7, "7. I feel comfortable in confronting my instructor/counselor/supervisor when we see things differently.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response7, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response8, "8. I now understand how my cultural heritage has shaped who I am today.")
-        @Html.TextBoxFor(Model => Model.Response8, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response8, "8. I now understand how my cultural heritage has shaped who I am today.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response8, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response9, "9. I give into others so as not to displease or anger them.")
-        @Html.TextBoxFor(Model => Model.Response9, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response9, "9. I give into others so as not to displease or anger them.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response9, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response10, "10. I don’t feel good about myself as a woman.")
-        @Html.TextBoxFor(Model => Model.Response10, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response10, "10. I don’t feel good about myself as a woman.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response10, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response11, "11. When others criticize me, I do not trust myself to decide if they are right or if I should ignore their comments.")
-        @Html.TextBoxFor(Model => Model.Response11, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response11, "11. When others criticize me, I do not trust myself to decide if they are right or if I should ignore their comments.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response11, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response12, "12. I realize that given my current situation, I am coping the best I can.")
-        @Html.TextBoxFor(Model => Model.Response12, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response12, "12. I realize that given my current situation, I am coping the best I can.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response12, new { type = "int" })
+            </div>
 
-        @Html.LabelFor(model => model.Response13, "13. I am feeling in control of my life.")
-        @Html.TextBoxFor(Model => Model.Response13, new { type = "int" })
-        <br />
+            <br />
 
-        @Html.LabelFor(model => model.Response14, "14. In defining for myself what it means for me to be attractive, I depend on the opinion of others.")
-        @Html.TextBoxFor(Model => Model.Response14, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response13, "13. I am feeling in control of my life.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response13, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response15, "15. I can’t seem to make good decisions about my life.")
-        @Html.TextBoxFor(Model => Model.Response15, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response14, "14. In defining for myself what it means for me to be attractive, I depend on the opinion of others.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response14, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response16, "16. I do not feel competent to handle the situations that arise in my everyday life.")
-        @Html.TextBoxFor(Model => Model.Response16, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response15, "15. I can’t seem to make good decisions about my life.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response15, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response17, "17. I am determined to become a fully functioning person.")
-        @Html.TextBoxFor(Model => Model.Response17, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response16, "16. I do not feel competent to handle the situations that arise in my everyday life.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response16, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response18, "18. I do not believe that there is anything I can do to make things better for women like me in today’s society.")
-        @Html.TextBoxFor(Model => Model.Response18, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response17, "17. I am determined to become a fully functioning person.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response17, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response19, "19. I believe that a woman like me can succeed in any job or career that I choose.")
-        @Html.TextBoxFor(Model => Model.Response19, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response18, "18. I do not believe that there is anything I can do to make things better for women like me in today’s society.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response18, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response20, "20. When making decisions about my life, I do not trust my own experience.")
-        @Html.TextBoxFor(Model => Model.Response20, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response19, "19. I believe that a woman like me can succeed in any job or career that I choose.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response19, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response21, "21. It is difficult for me to tell others when I feel angry.")
-        @Html.TextBoxFor(Model => Model.Response21, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response20, "20. When making decisions about my life, I do not trust my own experience.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response20, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response22, "22. I am able to satisfy my own sexual needs in a relationship.")
-        @Html.TextBoxFor(Model => Model.Response22, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response21, "21. It is difficult for me to tell others when I feel angry.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response21, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response23, "23. It is difficult for me to be good to myself.")
-        @Html.TextBoxFor(Model => Model.Response23, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response22, "22. I am able to satisfy my own sexual needs in a relationship.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response22, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response24, "24. It is hard for me to ask for help or support from others when I need it. ")
-        @Html.TextBoxFor(Model => Model.Response24, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response23, "23. It is difficult for me to be good to myself.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response23, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response25, "25. I want to help other women like me improve the quality of their lives.")
-        @Html.TextBoxFor(Model => Model.Response25, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response24, "24. It is hard for me to ask for help or support from others when I need it. ")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response24, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response26, "26. I feel uncomfortable in confronting important others in my live when we see things differently.")
-        @Html.TextBoxFor(Model => Model.Response26, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response25, "25. I want to help other women like me improve the quality of their lives.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response25, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response27, "27.  I want to feel more appreciated for my cultural background.")
-        @Html.TextBoxFor(Model => Model.Response27, new { type = "int" })
-        <br />
+            @Html.LabelFor(model => model.Response26, "26. I feel uncomfortable in confronting important others in my live when we see things differently.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response26, new { type = "int" })
+            </div>
+            <br />
 
-        @Html.LabelFor(model => model.Response28, "28.  I am aware of my own strengths as a woman.")
-        @Html.TextBoxFor(Model => Model.Response28, new { type = "int" })
-        <br />
-    </div>
+            @Html.LabelFor(model => model.Response27, "27.  I want to feel more appreciated for my cultural background.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response27, new { type = "int" })
+            </div>
+            <br />
 
-    <input type="submit" value="Submit Form" />
+            @Html.LabelFor(model => model.Response28, "28.  I am aware of my own strengths as a woman.")
+            <div class="col-lg-offset-0">
+                @Html.TextBoxFor(Model => Model.Response28, new { type = "int" })
+            </div>
+                <br />
+            </div>
 
-} <!--end of form-->
+            <input type="submit" value="Submit Form" />
+
+            } <!--end of form-->

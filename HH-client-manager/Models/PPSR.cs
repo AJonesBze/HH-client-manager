@@ -30,15 +30,17 @@ namespace HH_client_manager.Models
     public int Response16 { get; set; }
     public int Response17 { get; set; }
     public int Response18 { get; set; }
-        public int Response19 { get; set; }
-        public int Response20 { get; set; }
-        public int Response21 { get; set; }
-        public int Response22 { get; set; }
-        public int Response23 { get; set; }
-        public int Response24 { get; set; }
-        public int Response25 { get; set; }
-        public int Response26 { get; set; }
-        public int Response27 { get; set; }
-        public int Response28 { get; set; }
-    }
+    public int Response19 { get; set; }
+    public int Response20 { get; set; }
+    public int Response21 { get; set; }
+    public int Response22 { get; set; }
+    public int Response23 { get; set; }
+    public int Response24 { get; set; }
+    public int Response25 { get; set; }
+    public int Response26 { get; set; }
+    public int Response27 { get; set; }
+    public int Response28 { get; set; }
+    }//end of PPSR model class
+    
+   
 }
