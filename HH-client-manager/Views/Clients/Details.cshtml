@@ -76,7 +76,6 @@
             @Html.DisplayFor(model => model.ExitDate)
         </dd>
     </dl>
-    
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.ClientId">Edit</a> |
@@ -85,6 +84,6 @@
     <a href="/Pcls/ClientInfo/@Model.ClientId"> PCL Data </a> |
     <a href="/Cfars/ClientInfo/@Model.ClientId"> CFAR Data </a> <br />
     <a href="/Ppsrs/ClientCompare/@Model.ClientId"> **Compare PPSR Data </a> |
-    <a href="/Pcls/ClientInfo/@Model.ClientId"> **Compare PCL Data </a> |
+    <a href="/Pcls/ClientCompare/@Model.ClientId"> Compare PCL Data </a> |
     <a href="/Cfars/ClientCompare/@Model.ClientId"> Compare CFAR Data </a>
 </div>

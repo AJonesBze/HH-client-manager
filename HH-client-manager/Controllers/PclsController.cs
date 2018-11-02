@@ -25,7 +25,7 @@ namespace HH_client_manager.Controllers
             return View(await clientManager1Context.ToListAsync());
         }
 
-        // GET: Cfars
+        // GET: Pcls
         public async Task<IActionResult> ClientInfo(int? id) {
             if (id == null) {
                 return NotFound();
@@ -37,6 +37,43 @@ namespace HH_client_manager.Controllers
             Pcl = Pcl.Where(s => s.ClientId == Convert.ToInt32(id));
 
             return View(await Pcl.ToListAsync());
+        }
+
+        // GET: Pcls
+        public async Task<IActionResult> ClientCompare(int? id) {
+            if (id == null) {
+                return NotFound();
+            }
+
+            var Pcl2 = from m in _context.Pcl
+                        select m;
+
+            Pcl2 = Pcl2.Where(m => m.ClientId == Convert.ToInt32(id));
+            if (Pcl2.Count() == 0) {
+                return NotFound();
+            }
+            var max = 0;
+            foreach (var ass in Pcl2) {
+                if (ass.PclId > max) {
+                    max = ass.PclId;
+                }
+            }
+            Pcl Pcl3 = await _context.Pcl
+                .Include(c => c.Client)
+                .FirstOrDefaultAsync(m => m.PclId == max);
+
+            var Pcl = _context.Pcl.Include(c => c.Client);
+
+            double s = 0;
+
+            foreach (var ass in Pcl) {
+                s += ass.SeverityScore;
+            }
+            s = s / Pcl.Count();
+
+            ViewBag.SeverityScore = s;
+
+            return View(Pcl3);
         }
 
         // GET: Pcls/Details/5

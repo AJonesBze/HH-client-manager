@@ -1,0 +1,48 @@
+﻿@model HHclientmanager.Models.Pcl
+
+@{
+    ViewData["Title"] = "ClientCompare";
+}
+
+<h2>ClientCompare</h2>
+
+<div>
+    <h4>Pcl</h4>
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Comparing
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SeverityScore)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Client # @Html.DisplayFor(model => model.ClientId)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.SeverityScore)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Client Avg
+                </td>
+                <td>
+                    @ViewBag.SeverityScore
+                </td>
+            </tr>
+        <td>
+        </td>
+        </tbody>
+    </table>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PclId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
