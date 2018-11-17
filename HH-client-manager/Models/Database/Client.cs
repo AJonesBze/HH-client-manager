@@ -12,28 +12,28 @@ namespace HH_client_manager.Models.Database
         public string ClientID { get; set; }
 
         [DisplayName("Date of Birth")]
-        public DateTime date_of_birth { get; set; }
+        public DateTime Date_of_birth { get; set; }
 
         [DisplayName("Relationship Status")]
-        public string relationship_status { get; set; }
+        public string Relationship_status { get; set; }
 
         [DisplayName("Advocate Name")]
-        public string advocate_name { get; set; }
+        public string Advocate_name { get; set; }
 
         [DisplayName("Notes on Client")]
-        public string notes { get; set; }
+        public string Notes { get; set; }
 
         [DisplayName("Gender")]
-        public string gender { get; set; }
+        public string Gender { get; set; }
 
         [DisplayName("Ethnicity")]
-        public string ethnicity { get; set; }
+        public string Ethnicity { get; set; }
 
         [DisplayName("Race")]
-        public string race { get; set; }
+        public string Race { get; set; }
 
         [DisplayName("Partner Gender")]
-        public string partner_gender { get; set; }
+        public string Partner_gender { get; set; }
 
     }
 

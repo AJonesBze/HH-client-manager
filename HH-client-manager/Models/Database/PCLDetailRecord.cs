@@ -20,11 +20,5 @@ namespace HH_client_manager.Models.Database
         [DisplayName("PCL Bothered By Order")]
         public int Bothered_by_order { get; set; }
 
-        [DisplayName("PCL Assessment")]
-        public int Assessment { get; set; }
-
-
-
-
     }
 }
