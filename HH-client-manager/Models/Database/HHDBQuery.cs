@@ -18,7 +18,7 @@ namespace HH_client_manager.Models.Database
         //        public async Task<Aircraft> Get(int id)
         //        {
         //            Aircraft aircraft;
-        //            using (var connection = new SqlConnection("Server=tcp:hopehealing.database.windows.net,1433;Initial Catalog=HopeandHealingDashboardSystem;Persist Security Info=False;User ID=ArianneKJones;Password=NetAssets2018;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"))
+        //            using (var connection = new SqlConnection(ConnectionString))
         //            {
         //                await connection.OpenAsync();
         //                var query = @"
