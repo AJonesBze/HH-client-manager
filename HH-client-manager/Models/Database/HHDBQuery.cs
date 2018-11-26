@@ -10,7 +10,9 @@ namespace HH_client_manager.Models.Database
 {
     public class HHDBQuery
 {
-
+        private static string ServerUsername = "";
+        private static string ServerPassword = "";
+        private static string ConnectionString = "Server=tcp:hopehealing.database.windows.net,1433;Initial Catalog=HopeandHealingDashboardSystem;Persist Security Info=False;User ID=" + ServerUsername + ";Password=" + ServerPassword + ";MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         // get single object; based off of https://www.davepaquette.com/archive/2018/01/22/loading-an-object-graph-with-dapper.aspx 
         //        [HttpGet("{id}")]
         //        public async Task<Aircraft> Get(int id)
@@ -47,7 +49,7 @@ namespace HH_client_manager.Models.Database
         {
             IEnumerable<Gender> gender;
 
-            using (var connection = new SqlConnection("Server=tcp:hopehealing.database.windows.net,1433;Initial Catalog=HopeandHealingDashboardSystem;Persist Security Info=False;User ID={username};Password={password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"))
+            using (var connection = new SqlConnection(ConnectionString))
             {
                 await connection.OpenAsync();
                 var query = @"
