@@ -78,7 +78,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n<h2>Export Group</h2>\r\n\r\n<p>Please enter the group which you would like to export. <a onclick=\"window.history.back()\">Click here to go back to the last page.</a></p>\r\n\r\n<p>Gender: <select>\r\n    ");
             EndContext();
             BeginContext(246, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad516f039cc64873a76c63301084641c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "82ad04aa16cc485ca0e92fe29ec24c27", async() => {
                 BeginContext(264, 26, true);
                 WriteLiteral("Please select an option...");
                 EndContext();
@@ -100,7 +100,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(305, 33, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "90171562ae9b40719b89d67257cc2be3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bab8fd7f1bc14fffaf8a86f8dc00a3d0", async() => {
                 BeginContext(323, 6, true);
                 WriteLiteral("Female");
                 EndContext();
@@ -122,7 +122,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(344, 31, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f16c7b38cf6481991e06d9b773345a4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54202ab7a4e54a7c86701f043742e3c4", async() => {
                 BeginContext(362, 4, true);
                 WriteLiteral("Male");
                 EndContext();
@@ -144,7 +144,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(381, 32, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b766990f2d1f4ccd9d09f8fc784af2d2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dfc5f467208e444ea47ede2dbb369d67", async() => {
                 BeginContext(399, 5, true);
                 WriteLiteral("Other");
                 EndContext();
@@ -166,7 +166,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(419, 48, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e03b47a9de3f494ca45257c149bd1ea3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bd93d963de342cf96511875c5b2c812", async() => {
                 BeginContext(440, 18, true);
                 WriteLiteral("Transgender Female");
                 EndContext();
@@ -188,7 +188,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(473, 46, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d5a3a8691bb462bad5fd11417151763", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c55e1bbe4e94c828daedb6daf5a2900", async() => {
                 BeginContext(494, 16, true);
                 WriteLiteral("Transgender Male");
                 EndContext();
@@ -210,7 +210,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n</select><input type=\"button\" value=\"Go\" /></p>\r\n<p>Race: <select>\r\n     ");
             EndContext();
             BeginContext(594, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9040b6171192434ab74269957df003fc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "800337a346e843988a1e4b008c4965c9", async() => {
                 BeginContext(612, 26, true);
                 WriteLiteral("Please select an option...");
                 EndContext();
@@ -232,7 +232,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n     ");
             EndContext();
             BeginContext(654, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c98a2c3b919b4f389b5ca9dba17a64d1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "41bfba82b6ab45fc9348cb33d20f9c52", async() => {
                 BeginContext(676, 30, true);
                 WriteLiteral("American-Indian/Alaskan Native");
                 EndContext();
@@ -254,7 +254,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n     ");
             EndContext();
             BeginContext(722, 33, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3a1c412cd2c4c58981c39cd90c4d0ba", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42e0c18109ca4c8da974d485233e5abd", async() => {
                 BeginContext(741, 5, true);
                 WriteLiteral("Asian");
                 EndContext();
@@ -276,7 +276,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n     ");
             EndContext();
             BeginContext(762, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bbcc3dfc96f84705a85a895832dbcfd1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c93aa94e72d4446906248d911ef450d", async() => {
                 BeginContext(783, 22, true);
                 WriteLiteral("Black/African-American");
                 EndContext();
@@ -298,7 +298,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n     ");
             EndContext();
             BeginContext(821, 40, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74cfca627a23419da6f9452403d96c82", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f876cabfa5ca4c7fadaf3895014c72a2", async() => {
                 BeginContext(840, 12, true);
                 WriteLiteral("Multi-Racial");
                 EndContext();
@@ -320,7 +320,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n     ");
             EndContext();
             BeginContext(868, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e22869332724677a95088f13ea7060d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d81017a232b24d52a9b441f638480e2b", async() => {
                 BeginContext(891, 38, true);
                 WriteLiteral("Native Hawaiian/Other Pacific Islander");
                 EndContext();
@@ -342,7 +342,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n     ");
             EndContext();
             BeginContext(945, 32, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc41931cc2904914bd270f751bb15665", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c34127fe3f9d446aa4b49efd660569a2", async() => {
                 BeginContext(963, 5, true);
                 WriteLiteral("Other");
                 EndContext();
@@ -364,7 +364,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n     ");
             EndContext();
             BeginContext(984, 44, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c7ac1019f41456c9b948ceda3b90d12", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "576428b076c04150b870f00536b53bee", async() => {
                 BeginContext(1004, 15, true);
                 WriteLiteral("White/Caucasian");
                 EndContext();
@@ -386,7 +386,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n     </select><input type=\"button\" value=\"Go\" /></p>\r\n<p>Ethnicity: <select>\r\n     ");
             EndContext();
             BeginContext(1113, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55aa8cd0ebc549ddbf81602d019fbe4c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1f4a3b0d320413fa3bf8974b8931d1e", async() => {
                 BeginContext(1131, 26, true);
                 WriteLiteral("Please select an option...");
                 EndContext();
@@ -408,7 +408,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n     ");
             EndContext();
             BeginContext(1173, 34, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "168bdd797c08465e9d819d52a8d837f3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ba1520cee415409c93be3d32485f65e8", async() => {
                 BeginContext(1191, 7, true);
                 WriteLiteral("Haitian");
                 EndContext();
@@ -430,7 +430,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n     ");
             EndContext();
             BeginContext(1214, 44, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a0e232d2bf87421f87b0a90070e8b806", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d7b7d5f7abd84257bac7f03e2c1068ac", async() => {
                 BeginContext(1234, 15, true);
                 WriteLiteral("Hispanic/Latino");
                 EndContext();
@@ -452,7 +452,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n     ");
             EndContext();
             BeginContext(1265, 42, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce41163e7d634ce1950b4c911cc06177", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "04da83fcc9be4678a64db6917fdcbe25", async() => {
                 BeginContext(1284, 14, true);
                 WriteLiteral("Middle Eastern");
                 EndContext();
@@ -474,7 +474,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n     ");
             EndContext();
             BeginContext(1314, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c73297b2dbb545fbab8e0b194d265552", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f4835f43c7ce4cbda8db4d2a8ef13c36", async() => {
                 BeginContext(1336, 23, true);
                 WriteLiteral("Non-Hispanic/Non-Latino");
                 EndContext();
@@ -496,7 +496,7 @@ using HH_client_manager.Models;
             WriteLiteral("\r\n     ");
             EndContext();
             BeginContext(1375, 32, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2568df90a4e045e59f4ab31ca8a29f69", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99b4bdcbb9aa4394a40fd17ea37a7064", async() => {
                 BeginContext(1393, 5, true);
                 WriteLiteral("Other");
                 EndContext();

@@ -13,6 +13,7 @@ namespace HH_client_manager.Models
         [DisplayName("Statistic")]
         private int stat { get; set; }
 
+        [DisplayName("Statistic Field")]
         public string altName { get; set; }
 
         public TestingClass(string pname, int pstat, string paltname)
