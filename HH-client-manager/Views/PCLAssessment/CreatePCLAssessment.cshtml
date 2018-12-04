@@ -1,301 +1,171 @@
-﻿@model HH_client_manager.Models.Database.PCLAssessment
+﻿@using HH_client_manager.Models.Database;
+@model PCLAssessmentViewModel;
+
 
 @{
-    ViewData["Title"] = "View";
+    ViewData["Title"] = "Create PCL Assessment";
 }
 
-<h2>View</h2>
+<h2>PCL Assessment</h2>
 
-@using (Html.BeginForm())@*Action method?*@
+    @*action, then the controller name*@
+
+@using (Html.BeginForm("CreatePCLAssessment", "PCLAssessment"))
 {
-    <div class="editor-label">
-        @Html.LabelFor(model => model.ClientID, "Client ID: ")
-    </div> <!--end of "form-group" div for Patient Name-->
-
-    <div class="col-md-offset-0">
-
-        @Html.EditorFor(model => model.ClientID)
-
-        @Html.ValidationMessageFor(model => model.ClientID, "", new { @class = "text-danger" })
-
-    </div> <!--end of "col-md-10" div for Patient Name-->
-
-    <br />
-
-    <div class="editor-label">
-
-        @Html.LabelFor(model => model.Date, "Date: ")
-
-    </div><!--end of "form-group" div for Today's Date-->
-
-    <div class="col-md-offset-0">
-
-        @Html.TextBoxFor(Model => Model.Date, new { type = "date" })
-
-    </div><!--end of "col-md-10" div for Today's Date-->
 
 
-    <br />
-    <br />
+    PCLAssessment pCLAssessment = Model.pCLAssessment;
 
-    <p>
-        If an event listed on the Life Events Checklist <strong>happened to you </strong> or you <strong>witnessed it, </strong>
-        please complete the items below. If more than one event happened, please choose the one that is <strong>most troublesome to you now.</strong>
-    </p>
 
-    <br />
-    <br />
 
-    <div class="editor-label">
-        @Html.LabelFor(model => model.Event_description, "Event: ")
+        <div class="editor-label">
+            @Html.LabelFor(model => pCLAssessment.ClientID, "Client ID: ")
+        </div> <!--end of "form-group" div for Patient Name-->
 
         <div class="col-md-offset-0">
 
-            @Html.EditorFor(model => model.Event_description)
+            @Html.EditorFor(model => pCLAssessment.ClientID)
 
-            @Html.ValidationMessageFor(model => model.Event_description, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => pCLAssessment.ClientID, "", new { @class = "text-danger" })
 
-        </div> <!--end of "col-md-10" div for Event-->
+        </div> <!--end of "col-md-10" div for Patient Name-->
 
-    </div> <!--end of "form-group" div for Event-->
+        <br />
 
-    <div class="editor-label">
+        <div class="editor-label">
 
-        @Html.LabelFor(model => model.Event_date, "Date: ")
+            @Html.LabelFor(model => pCLAssessment.Date, "Date: ")
 
-        <div class="col-md-offset-0">
-
-            @Html.TextBoxFor(Model => Model.Event_date, new { type = "date" })
-
-        </div><!--end of "col-md-10" div for Event Date-->
-
-
-    </div><!--end of "form-group" div for Event Date-->
-
-    <div class="editor-label">
-
-        @Html.LabelFor(model => model.Assessment_Type, "Assessment Type: ")
+        </div><!--end of "form-group" div for Today's Date-->
 
         <div class="col-md-offset-0">
 
-            @Html.TextBoxFor(Model => Model.Assessment_Type, new { @class = "text-danger" })
+            @Html.TextBoxFor(Model => pCLAssessment.Date, new { type = "date" })
 
-        </div><!--end of "col-md-10" div for Assessment Type-->
-
-
-    </div><!--end of "form-group" div for Assessment Type-->
-
-    <div class="editor-label">
-
-        @Html.LabelFor(model => model.Edited_by, "Edited By: ")
-
-        <div class="col-md-offset-0">
-
-            @Html.TextBoxFor(Model => Model.Edited_by, new { @class = "text-danger" })
-
-        </div><!--end of "col-md-10" div for Edited By -->
+        </div><!--end of "col-md-10" div for Today's Date-->
 
 
-    </div><!--end of "form-group" div for Edited By-->
+        <br />
+        <br />
 
-    <div class="editor-label">
+        <p>
+            If an event listed on the Life Events Checklist <strong>happened to you </strong> or you <strong>witnessed it, </strong>
+            please complete the items below. If more than one event happened, please choose the one that is <strong>most troublesome to you now.</strong>
+        </p>
 
-        @Html.LabelFor(model => model.Edit_date, "Date: ")
+        <br />
+        <br />
 
-        <div class="col-md-offset-0">
+        <div class="editor-label">
+            @Html.LabelFor(model => pCLAssessment.Event_description, "Event: ")
 
-            @Html.TextBoxFor(Model => Model.Edit_date, new { type = "date" })
+            <div class="col-md-offset-0">
 
-        </div><!--end of "col-md-10" div for Edit Date-->
+                @Html.EditorFor(model => pCLAssessment.Event_description)
+
+                @Html.ValidationMessageFor(model => pCLAssessment.Event_description, "", new { @class = "text-danger" })
+
+            </div> <!--end of "col-md-10" div for Event-->
+
+        </div> <!--end of "form-group" div for Event-->
+
+        <div class="editor-label">
+
+            @Html.LabelFor(model => pCLAssessment.Event_date, "Date: ")
+
+            <div class="col-md-offset-0">
+
+                @Html.TextBoxFor(Model => pCLAssessment.Event_date, new { type = "date" })
+
+            </div><!--end of "col-md-10" div for Event Date-->
 
 
-    </div><!--end of "form-group" div for Edit Date-->
+        </div><!--end of "form-group" div for Event Date-->
+
+        <div class="editor-label">
+
+            @Html.LabelFor(model => pCLAssessment.Assessment_Type, "Assessment Type: ")
+
+            <div class="col-md-offset-0">
+
+                @Html.TextBoxFor(Model => pCLAssessment.Assessment_Type, new { @class = "text-danger" })
+
+            </div><!--end of "col-md-10" div for Assessment Type-->
 
 
-    <table>
+        </div><!--end of "form-group" div for Assessment Type-->
+
+        <div class="editor-label">
+
+            @Html.LabelFor(model => pCLAssessment.Edited_by, "Edited By: ")
+
+            <div class="col-md-offset-0">
+
+                @Html.TextBoxFor(Model => pCLAssessment.Edited_by, new { @class = "text-danger" })
+
+            </div><!--end of "col-md-10" div for Edited By -->
+
+
+        </div><!--end of "form-group" div for Edited By-->
+
+        <div class="editor-label">
+
+            @Html.LabelFor(model => pCLAssessment.Edit_date, "Date: ")
+
+            <div class="col-md-offset-0">
+
+                @Html.TextBoxFor(Model => pCLAssessment.Edit_date, new { type = "date" })
+
+            </div><!--end of "col-md-10" div for Edit Date-->
+
+
+        </div><!--end of "form-group" div for Edit Date-->
+
+
+
+
+
+   <table>
+
+
+
         <tr>
-            <th>Bothered By</th>
-            <th>Not At All</th>
-            <th>A Little Bit</th>
-            <th>Moderately</th>
-            <th>Quite A Bit</th>
-            <th>Extremely</th>
+
+             <th>Number</th>
+
+             <th>Bothered By</th>
+
+             <th>Scale</th>
+
+
         </tr>
 
+
+    
+
+                @for ( int i =0; i < Model.pCLDetailDataEntry.Count; i++)
+                {
         <tr>
-            <td>1. Repeated disturbing memories, thoughts, or images of the stressful experience</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(1), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(1), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(1), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(1), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(1), value: 5)</td>
+            <td>@Html.DisplayFor(model => model.pCLDetailDataEntry[i].Bothered_by_order)</td>
+            <td>@Html.DisplayFor(model => model.pCLDetailDataEntry[i].Bothered_by_Description)</td>
+            <td>@Html.TextBoxFor(model => model.pCLDetailDataEntry[i].Scale_number)
+                
 
-        </tr><!--Block for Response1-->
+            
+                </td>
 
-        <tr>
-            <td>2. Repeated, distrubing dreams of the stressful experince?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(2), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(2), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(2), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(2), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(2), value: 5)</td>
+            </tr>
 
-        </tr><!--Block for Response2-->
-
-        <tr>
-            <td>3. Suddenly acting or feeling as if the stressful experience were happening again (as if you were reliving it)?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(3), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(3), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(3), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(3), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(3), value: 5)</td>
-
-        </tr><!--Block for Response3-->
-
-        <tr>
-            <td>4. Feeling very upset when something reminded you of the stressful experience?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(4), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(4), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(4), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(4), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(4), value: 5)</td>
-
-        </tr><!--Block for Response 4-->
-
-        <tr>
-            <td>5. Having physical reactions (e.g. heart pounding, trouble breathing, or sweating) when something reminded you of the stressful experience?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(5), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(5), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(5), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(5), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(5), value: 5)</td>
-
-        </tr><!--Block for Response5-->
-
-        <tr>
-            <td>6. Avoiding thinking about or talking about the stressful experience or avoiding having feelings related to it?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(6), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(6), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(6), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(6), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(6), value: 5)</td>
-        </tr><!--Block for Response6-->
-
-        <tr>
-            <td>7. Aviding activities or situations because they remind you of the stressful experience?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(7), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(7), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(7), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(7), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(7), value: 5)</td>
-
-        </tr><!--Block for Response7-->
-
-        <tr>
-            <td>8. Trouble remebering important parts of the stressful experience?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(8), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(8), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(8), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(8), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(8), value: 5)</td>
-
-        </tr><!--Block for Response8-->
-
-        <tr>
-            <td>9. Loss of interest in activities that you used to enjoy?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(9), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(9), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(9), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(9), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(9), value: 5)</td>
-
-        </tr><!--Block for Response9-->
-
-        <tr>
-            <td>10. Feeling distant or cut-off from other people?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(10), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(10), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(10), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(10), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(10), value: 5)</td>
-        </tr>><!--Block for Response10-->
-
-        <tr>
-            <td>11. Feeling emotionally numb or being unable to have loving feelings for those close to you?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(11), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(11), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(11), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(11), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(11), value: 5)</td>
-
-        </tr><!--Block for Response11-->
-
-        <tr>
-            <td>12. Feeling as if your future will somehow be cut short?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(12), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(12), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(12), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(12), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(12), value: 5)</td>
-
-        </tr><!--Block for Response12-->
-
-        <tr>
-            <td>13. Trouble falling or staying asleep?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(13), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(13), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(13), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(13), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(13), value: 5)</td>
-        </tr><!--Block for Response13-->
-
-        <tr>
-            <td>14. Feeling irritable or having angry outbursts?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(14), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(14), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(14), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(14), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(14), value: 5)</td>
-
-        </tr><!--Block for Response14-->
+               
+              
+                 }
 
 
-        <tr>
-            <td>15. Having difficulty concentrating?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(15), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(15), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(15), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(15), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(15), value: 5)</td>
-        </tr><!--Block for Response15-->
-
-        <tr>
-            <td>16. Being "super alert" or watchful or on guard?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(16), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(16), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(16), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(16), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(16), value: 5)</td>
-
-        </tr><!--Block for Response16-->
-
-
-        <tr>
-            <td>17. Feeling jumpy or easily startled?</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(17), value: 1)</td>   @*how to define that it is sequence number one*@
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(17), value: 2)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(17), value: 3)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(17), value: 4)</td>
-            <td>@Html.RadioButtonFor(Model => Model.Sequence_number.Equals(17), value: 5)</td>
-
-        </tr><!--Block for Response17-->
-
-    </table><!--end of table-->
-
+   </table>
+       
     <br />
     <br />
 
     <input type="submit" value="Submit Form" />
-
 
 }<!-- end of form-->

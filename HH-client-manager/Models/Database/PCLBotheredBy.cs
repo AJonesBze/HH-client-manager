@@ -10,5 +10,6 @@ namespace HH_client_manager.Models.Database
 {
         [DisplayName("PCL Bothered By Order")]
         public int Order { get; set; }
+        public String Description { get; set; }
     }
 }
