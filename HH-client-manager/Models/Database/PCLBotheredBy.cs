@@ -8,6 +8,11 @@ namespace HH_client_manager.Models.Database
 {
     public class PCLBotheredBy
 {
+        public PCLBotheredBy(int order)
+        {
+            Order = order;
+        }
+
         [DisplayName("PCL Bothered By Order")]
         public int Order { get; set; }
     }

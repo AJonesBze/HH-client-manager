@@ -8,6 +8,10 @@ namespace HH_client_manager.Models.Database
 {
     public class ClientEthnicity
 {
+        public ClientEthnicity(string ethnicity)
+        {
+            Ethnicity = ethnicity ?? throw new ArgumentNullException(nameof(ethnicity));
+        }
 
         [DisplayName("Ethnicity")]
         public string Ethnicity { get; set; }

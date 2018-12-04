@@ -8,6 +8,11 @@ namespace HH_client_manager.Models.Database
 {
     public class AssessmentType
 {
+        public AssessmentType(string type)
+        {
+            Type = type ?? throw new ArgumentNullException(nameof(type));
+        }
+
         [DisplayName("Assessment Type")]
         public string Type { get; set; }
     }

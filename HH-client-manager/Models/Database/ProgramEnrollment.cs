@@ -8,6 +8,14 @@ namespace HH_client_manager.Models.Database
 {
     public class ProgramEnrollment
 {
+        public ProgramEnrollment(string clientID, string name, DateTime enrollment_date, DateTime? exit_date)
+        {
+            ClientID = clientID ?? throw new ArgumentNullException(nameof(clientID));
+            Name = name ?? throw new ArgumentNullException(nameof(name));
+            Enrollment_date = enrollment_date;
+            Exit_date = exit_date ?? throw new ArgumentNullException(nameof(exit_date));
+        }
+
         [DisplayName("Client ID")]
         public string ClientID { get; set; }
 

@@ -8,6 +8,11 @@ namespace HH_client_manager.Models.Database
 {
     public class CFARSCategory
 {
+        public CFARSCategory(string name)
+        {
+            Name = name ?? throw new ArgumentNullException(nameof(name));
+        }
+
         [DisplayName("CFARS Category Name")]
         public string Name { get; set; }
     }

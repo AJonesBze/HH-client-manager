@@ -8,6 +8,12 @@ namespace HH_client_manager.Models.Database
 {
     public class CFARSSubCategory
 {
+        public CFARSSubCategory(string name, string category_name)
+        {
+            Name = name ?? throw new ArgumentNullException(nameof(name));
+            Category_name = category_name ?? throw new ArgumentNullException(nameof(category_name));
+        }
+
         [DisplayName("Subcategory Name")]
         public string Name { get; set; }
 

@@ -8,7 +8,12 @@ namespace HH_client_manager.Models.Database
 {
     public class ClientRace
 {
-    [DisplayName("Client Race")]
+        public ClientRace(string race)
+        {
+            Race = race ?? throw new ArgumentNullException(nameof(race));
+        }
+
+        [DisplayName("Client Race")]
     public string Race { get; set; }
 }
 }

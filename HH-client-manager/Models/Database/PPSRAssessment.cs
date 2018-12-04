@@ -8,6 +8,16 @@ namespace HH_client_manager.Models.Database
 {
     public class PPSRAssessment
 {
+        public PPSRAssessment(int serial_number, DateTime date_conducted, string statements, int order_number, string letter_identifier, int scale_number)
+        {
+            Serial_number = serial_number;
+            Date_conducted = date_conducted;
+            Statements = statements ?? throw new ArgumentNullException(nameof(statements));
+            Order_number = order_number;
+            Letter_identifier = letter_identifier ?? throw new ArgumentNullException(nameof(letter_identifier));
+            Scale_number = scale_number;
+        }
+
         [DisplayName("PPSL Serial Number")]
         public int Serial_number { get; set; }
 

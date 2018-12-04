@@ -8,6 +8,22 @@ namespace HH_client_manager.Models.Database
 {
     public class CFARSAssessment
 {
+        public CFARSAssessment(int serial_number, DateTime date, string clientID, DateTime preassessment_date, string type, string program_name, string conducted_by, int number_of_group_sessions, int number_of_advocacy_meetings, int number_of_counseling_sessions, string edited_by, DateTime? edit_date)
+        {
+            Serial_number = serial_number;
+            Date = date;
+            ClientID = clientID ?? throw new ArgumentNullException(nameof(clientID));
+            Preassessment_date = preassessment_date;
+            Type = type ?? throw new ArgumentNullException(nameof(type));
+            Program_name = program_name ?? throw new ArgumentNullException(nameof(program_name));
+            Conducted_by = conducted_by ?? throw new ArgumentNullException(nameof(conducted_by));
+            Number_of_group_sessions = number_of_group_sessions;
+            Number_of_advocacy_meetings = number_of_advocacy_meetings;
+            Number_of_counseling_sessions = number_of_counseling_sessions;
+            Edited_by = edited_by ?? throw new ArgumentNullException(nameof(edited_by));
+            Edit_date = edit_date ?? throw new ArgumentNullException(nameof(edit_date));
+        }
+
         [DisplayName("CFARS Serial Number")]
         public int Serial_number { get; set; }
 

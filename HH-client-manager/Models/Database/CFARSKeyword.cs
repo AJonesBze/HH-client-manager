@@ -8,6 +8,13 @@ namespace HH_client_manager.Models.Database
 {
     public class CFARSKeyword
 {
+        public CFARSKeyword(string keyword, string definition, string subcategory_name)
+        {
+            Keyword = keyword ?? throw new ArgumentNullException(nameof(keyword));
+            Definition = definition ?? throw new ArgumentNullException(nameof(definition));
+            Subcategory_name = subcategory_name ?? throw new ArgumentNullException(nameof(subcategory_name));
+        }
+
         [DisplayName("CFARS Keyword")]
         public string Keyword { get; set; }
 

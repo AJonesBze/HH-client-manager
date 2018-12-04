@@ -8,6 +8,11 @@ namespace HH_client_manager.Models.Database
 {
     public class Shelter
 {
+        public Shelter(string location)
+        {
+            Location = location ?? throw new ArgumentNullException(nameof(location));
+        }
+
         [DisplayName("Shelter Location")]
         public string Location { get; set; }
     }

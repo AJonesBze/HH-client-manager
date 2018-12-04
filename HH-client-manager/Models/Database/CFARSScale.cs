@@ -8,6 +8,12 @@ namespace HH_client_manager.Models.Database
 {
     public class CFARSScale
 {
+        public CFARSScale(int number, string description)
+        {
+            Number = number;
+            Description = description ?? throw new ArgumentNullException(nameof(description));
+        }
+
         [DisplayName("CFARS Scale Number")]
         public int Number { get; set; }
 

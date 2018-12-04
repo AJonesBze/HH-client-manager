@@ -8,6 +8,12 @@ namespace HH_client_manager.Models.Database
 {
     public class PPSRScale
 {
+        public PPSRScale(int scale_number, string description)
+        {
+            Scale_number = scale_number;
+            Description = description ?? throw new ArgumentNullException(nameof(description));
+        }
+
         [DisplayName("Scale Number")]
         public int Scale_number { get; set; }
 

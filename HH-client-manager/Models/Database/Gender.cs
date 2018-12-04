@@ -8,6 +8,11 @@ namespace HH_client_manager.Models.Database
 {
     public class Gender
 {
+        public Gender(string genderType)
+        {
+            GenderType = genderType ?? throw new ArgumentNullException(nameof(genderType));
+        }
+
         [DisplayName("Gender")]
         public string GenderType { get; set; }
     }

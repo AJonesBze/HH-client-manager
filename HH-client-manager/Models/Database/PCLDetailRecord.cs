@@ -8,6 +8,14 @@ namespace HH_client_manager.Models.Database
 {
     public class PCLDetailRecord
 {
+        public PCLDetailRecord(int number, int sequence_number, int scale_number, int bothered_by_order)
+        {
+            Number = number;
+            Sequence_number = sequence_number;
+            Scale_number = scale_number;
+            Bothered_by_order = bothered_by_order;
+        }
+
         [DisplayName("PCL Detail Record Number")]
         public int Number { get; set; }
 

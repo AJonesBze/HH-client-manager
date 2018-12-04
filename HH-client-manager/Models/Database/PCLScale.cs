@@ -8,6 +8,12 @@ namespace HH_client_manager.Models.Database
 {
     public class PCLScale
 {
+        public PCLScale(int number, string description)
+        {
+            Number = number;
+            Description = description ?? throw new ArgumentNullException(nameof(description));
+        }
+
         [DisplayName("PCL Scale Number")]
         public int Number { get; set; }
 
