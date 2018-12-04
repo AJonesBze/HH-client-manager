@@ -58,7 +58,7 @@ namespace HH_client_manager.Controllers
         [HttpPost("UploadFiles")]
         public async Task<IActionResult> Post(List<IFormFile> files)
         {
-            long size = files.Sum(f => f.Length);
+            //long size = files.Sum(f => f.Length);
 
             // full path to file in temp location
             var filePath = Path.GetTempFileName();
