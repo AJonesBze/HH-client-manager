@@ -9,6 +9,6 @@ namespace HH_client_manager.Models.Database
     public class Program
     {
         [DisplayName("Program Name")]
-        public string program_name { get; set; };
+        public string program_name { get; set; }
     }
 }
