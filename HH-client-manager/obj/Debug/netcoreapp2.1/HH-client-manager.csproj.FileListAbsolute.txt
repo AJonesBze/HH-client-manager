@@ -30,3 +30,4 @@ C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\
 C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.dll
 C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.pdb
 C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.csproj.CopyComplete
+C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\Home\ExportImport.g.cshtml.cs
