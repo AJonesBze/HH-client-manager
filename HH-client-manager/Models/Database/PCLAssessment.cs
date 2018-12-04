@@ -18,7 +18,7 @@ namespace HH_client_manager.Models.Database
         public DateTime Date { get; set; }
 
         [DisplayName("Assessment Type")]
-        public string Type { get; set; }
+        public string Assessment_Type { get; set; }
 
         [DisplayName("Event Description")]
         public string Event_description { get; set; }
