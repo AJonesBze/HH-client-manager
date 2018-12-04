@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\HH-client-manager",
+    "\\HH-client-manager\\Views",
+    "\\HH-client-manager\\Views\\Home"
   ],
+  "SelectedNode": "\\HH-client-manager.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -63,3 +63,4 @@ C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debu
 C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.Views.pdb
 C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.csproj.CopyComplete
 C:\Users\Arianne Jones\Source\Repos\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\HH-client-manager.csprojAssemblyReference.cache
+C:\Users\dowdiem\Source\Repos\n00721843\HH-client-manager\HH-client-manager\obj\Debug\netcoreapp2.1\Razor\Views\PCLAssessment\CreatePCLAssessment.g.cshtml.cs
