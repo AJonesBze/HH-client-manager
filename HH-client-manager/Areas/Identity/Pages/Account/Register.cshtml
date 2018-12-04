@@ -1,0 +1,61 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+<br /> 
+
+<style>
+    .row {
+        margin: auto;
+        width: 50%;
+        border: 10px solid BF3EFF;
+        padding: 30px;
+    }
+
+    .btn-default {
+        margin: auto;
+        width: 50%;
+        background-color: #660198;
+        color: #ffffff;
+        padding: 10px;
+    }
+</style>
+<div class="row">
+    <h1>Register a New User.</h1>
+    <br />
+    <br />
+    
+    <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+        <h4>Create a new account.</h4>
+        <hr />
+        <div asp-validation-summary="All" class="text-danger"></div>
+    
+        <div class="form-group">
+            <label asp-for="Input.Email"></label>
+            <input asp-for="Input.Email" class="form-control" />
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Input.Password"></label>
+            <input asp-for="Input.Password" class="form-control" />
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Input.ConfirmPassword"></label>
+            <input asp-for="Input.ConfirmPassword" class="form-control" />
+            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+        </div>
+        
+        <button type="submit" class="btn btn-default">Register</button>
+    </form>
+    
+
+</div>
+
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
