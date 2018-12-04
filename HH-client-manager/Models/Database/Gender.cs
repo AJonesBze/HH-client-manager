@@ -9,6 +9,6 @@ namespace HH_client_manager.Models.Database
     public class Gender
 {
         [DisplayName("Gender")]
-        public string Gender { get; set; }
+        public string GenderType { get; set; }
     }
 }

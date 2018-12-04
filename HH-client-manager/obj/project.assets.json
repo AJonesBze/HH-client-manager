@@ -3110,6 +3110,15 @@
           "lib/netstandard1.2/System.Data.Common.dll": {}
         }
       },
+      "System.Data.DataSetExtensions/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Data.DataSetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Data.DataSetExtensions.dll": {}
+        }
+      },
       "System.Data.SqlClient/4.5.1": {
         "type": "package",
         "dependencies": {
@@ -8081,6 +8090,25 @@
         "system.data.common.nuspec"
       ]
     },
+    "System.Data.DataSetExtensions/4.5.0": {
+      "sha512": "xKUL8eeGuJ0uHaRpDKFibVxXjWrquWxQuASlRnhvITQ8cGZPZrO8T8lh8XKfOnirrDyQz81TCwALPXzflSW3JA==",
+      "type": "package",
+      "path": "system.data.datasetextensions/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "system.data.datasetextensions.4.5.0.nupkg.sha512",
+        "system.data.datasetextensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Data.SqlClient/4.5.1": {
       "sha512": "cTPUCClr34EGBnyazUeciMD6sNm9aiE/li3uGvJ7z5dGup9QxKwysUeKXIrCO0E5KtQQAzGORFEYmowyEpcL2A==",
       "type": "package",
@@ -12036,7 +12064,8 @@
       "Dapper >= 1.50.5",
       "EPPlus >= 4.5.2.1",
       "Microsoft.AspNetCore.App >= 2.1.1",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "System.Data.DataSetExtensions >= 4.5.0"
     ]
   },
   "packageFolders": {
@@ -12098,6 +12127,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "System.Data.DataSetExtensions": {
+            "target": "Package",
+            "version": "[4.5.0, )"
           }
         },
         "imports": [
